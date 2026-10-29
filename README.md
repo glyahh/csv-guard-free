@@ -14,6 +14,10 @@
 
 编号 `000123` 若被软件作为数值解析，可能变成 `123`。CSV 不保存列类型，仅用引号包住数字也不能阻止所有表格软件自动推断。pandas 用户的真实公开问题 [#54665](https://github.com/pandas-dev/pandas/issues/54665) 记录过这种需求，并已通过显式文本类型解决，不是本工具宣称发现了当前漏洞。
 
+## 英文实测教程 / English walkthrough
+
+[Keep `000123` intact: a reproducible CSV identifier check before spreadsheet import](docs/csv-leading-zero-check.md) 用同一份虚构样例说明不下载工具也能进行的人工检查、Python 实测结果和局限；文中明确披露 AI 协助，Excel 指引未原生实测。
+
 ## 先看可重复演示
 
 需要 Python 3.10+（实测 Linux / Python 3.12.14）。解压后在目录内执行：
