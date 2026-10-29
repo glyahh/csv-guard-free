@@ -1,0 +1,19 @@
+test_bad_encoding (test_inspect.Tests.test_bad_encoding) ... ok
+test_bad_quotes (test_inspect.Tests.test_bad_quotes) ... ok
+test_cli_bad_input (test_inspect.Tests.test_cli_bad_input) ... ok
+test_counts (test_inspect.Tests.test_counts) ... ok
+test_duplicate_header (test_inspect.Tests.test_duplicate_header) ... ok
+test_fifo (test_inspect.Tests.test_fifo) ... ok
+test_gb18030 (test_inspect.Tests.test_gb18030) ... ok
+test_header_only (test_inspect.Tests.test_header_only) ... ok
+test_multiline (test_inspect.Tests.test_multiline) ... ok
+test_no_output_files (test_inspect.Tests.test_no_output_files) ... ok
+test_original_unchanged (test_inspect.Tests.test_original_unchanged) ... ok
+test_over_limit (test_inspect.Tests.test_over_limit) ... ok
+test_symlink (test_inspect.Tests.test_symlink) ... ok
+test_values_not_reported (test_inspect.Tests.test_values_not_reported) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.041s
+
+OK

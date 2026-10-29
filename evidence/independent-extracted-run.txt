@@ -1,0 +1,70 @@
+Python 3.12.14; Linux
+Fresh ZIP extraction; different cwd; python -S (site-packages disabled)
+原创模拟目录：5 条记录，SKU 和邮编均含前导零。
+诊断：1 条完整重复行，1 条潜在公式行，商品名 2 格有两端空白。
+不修改数据；前导零并不代表错误，而是提醒下游按文本导入。
+{
+  "mode": "read_only",
+  "input_sha256": "f1dd468ea7823265445f7cd880ef02f88de684549e1c234b316b366db94c15bb",
+  "rows": 5,
+  "columns": 4,
+  "exact_duplicate_rows": 1,
+  "formula_prefix_rows": 1,
+  "formula_prefix_headers": 0,
+  "column_checks": [
+    {
+      "column_number": 1,
+      "leading_zero_digit_cells": 5,
+      "outer_whitespace_cells": 0,
+      "blank_cells": 0,
+      "literal_NA_cells": 0,
+      "formula_prefix_cells": 0
+    },
+    {
+      "column_number": 2,
+      "leading_zero_digit_cells": 0,
+      "outer_whitespace_cells": 2,
+      "blank_cells": 0,
+      "literal_NA_cells": 0,
+      "formula_prefix_cells": 0
+    },
+    {
+      "column_number": 3,
+      "leading_zero_digit_cells": 5,
+      "outer_whitespace_cells": 0,
+      "blank_cells": 0,
+      "literal_NA_cells": 0,
+      "formula_prefix_cells": 0
+    },
+    {
+      "column_number": 4,
+      "leading_zero_digit_cells": 0,
+      "outer_whitespace_cells": 0,
+      "blank_cells": 1,
+      "literal_NA_cells": 2,
+      "formula_prefix_cells": 1
+    }
+  ],
+  "note": "列号从 1 开始；不输出字段值或表头；不是完整安全扫描；不修改输入"
+}
+DEMO PASS: 实际检查结果符合原创样例预期，原文件字节未改动。
+
+test_bad_encoding (test_inspect.Tests.test_bad_encoding) ... ok
+test_bad_quotes (test_inspect.Tests.test_bad_quotes) ... ok
+test_cli_bad_input (test_inspect.Tests.test_cli_bad_input) ... ok
+test_counts (test_inspect.Tests.test_counts) ... ok
+test_duplicate_header (test_inspect.Tests.test_duplicate_header) ... ok
+test_fifo (test_inspect.Tests.test_fifo) ... ok
+test_gb18030 (test_inspect.Tests.test_gb18030) ... ok
+test_header_only (test_inspect.Tests.test_header_only) ... ok
+test_multiline (test_inspect.Tests.test_multiline) ... ok
+test_no_output_files (test_inspect.Tests.test_no_output_files) ... ok
+test_original_unchanged (test_inspect.Tests.test_original_unchanged) ... ok
+test_over_limit (test_inspect.Tests.test_over_limit) ... ok
+test_symlink (test_inspect.Tests.test_symlink) ... ok
+test_values_not_reported (test_inspect.Tests.test_values_not_reported) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.040s
+
+OK
